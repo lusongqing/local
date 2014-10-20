@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_monthview_sample"
+    tools:context="com.interest.ecalendar.activity.CommentActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+<!--         <CalendarView -->
+<!--             android:id="@+id/L_vcalendar" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="170dip" -->
+<!--             android:animateLayoutChanges="true" -->
+<!--             android:clickable="true" -->
+<!--             android:firstDayOfWeek="2" -->
+<!--             android:layoutMode="clipBounds" -->
+<!--             android:longClickable="true" -->
+<!--             android:minDate="03/03/1865" -->
+<!--             android:showWeekNumber="true" -->
+<!--             android:shownWeekCount="4" /> -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/L_upIcon" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:src="@drawable/up" /> -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- First Row - 1nd Activity -->
+
+            <TableRow
+                android:id="@+id/L_activity1Row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <!-- Left side: show person who post the activity -->
+
+                <TextView
+                    android:id="@+id/L_activity1PosterView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/photo1"
+                    android:text="@string/person1" />
+
+                <!-- Right side: show the activity -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:background="@drawable/bg_monthview_activitysection_white_1"
+                    android:orientation="vertical" >
+
+                    <!-- activity title -->
+
+                    <TextView
+                        android:id="@+id/L_activity1View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="3dip"
+                        android:text="@string/activity1"
+                        android:textColor="#194b15"/>
+
+                    <!-- activity attachment icon, comment icon, post datetime -->
+
+                    <LinearLayout
+                        android:id="@+id/L_activity1InfoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/L_activity1AttLinkImgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/iconDescAttachmentLink"
+                            android:src="@drawable/icon_pic" />
+
+                        <ImageView
+                            android:id="@+id/L_activity1ComLinkImgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:contentDescription="@string/iconDescCommentLink"
+                            android:src="@drawable/icon_comment" />
+
+                        <TextView
+                            android:id="@+id/L_activity1DateView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="@string/time1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <!-- Third Row - 2nd Activity -->
+
+
+            <!-- Second Row - 1nd Activity -->
+
+            <TableRow
+                android:id="@+id/L_activity2Row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- Left side: show person who post the activity -->
+
+                <TextView
+                    android:id="@+id/L_activity2PosterView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/photo2"
+                    android:text="@string/person2" />
+
+                <!-- Right side: show the activity -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:background="@drawable/bg_monthview_activitysection_white_2"
+                    android:orientation="vertical" >
+
+                    <!-- activity title -->
+
+                    <TextView
+                        android:id="@+id/L_activity2View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="12dip"
+                        android:text="@string/activity2"
+                        android:textColor="#194b15" />
+
+                    <!-- activity attachment icon, comment icon, post datetime -->
+
+                    <LinearLayout
+                        android:id="@+id/L_activity2InfoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/L_activity2AttLinkImgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/iconDescAttachmentLink"
+                            android:src="@drawable/icon_pic" />
+
+                        <ImageView
+                            android:id="@+id/L_activity2ComLinkImgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:contentDescription="@string/iconDescCommentLink"
+                            android:src="@drawable/icon_comment" />
+
+                        <TextView
+                            android:id="@+id/L_activity2DateView"
+                            android:layout_width="120dp"
+                            android:layout_height="30dip"
+                            android:text="@string/time1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <!-- Fragment, Menu Bar -->
+
+    <LinearLayout
+        android:id="@+id/L_monthView_MenuRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:orientation="horizontal" >
+		
+        <LinearLayout
+            android:id="@+id/L_menuListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/L_monthviewImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36dip"
+                android:contentDescription="@string/iconDescMonthview"
+                android:src="@drawable/icon_monthview" />
+
+            <ImageView
+                android:id="@+id/L_activitylistImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36dip"
+                android:contentDescription="@string/iconDescActivitylist"
+                android:src="@drawable/icon_activitylist" />
+
+            <ImageView
+                android:id="@+id/L_postImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36dip"
+                android:contentDescription="@string/iconDescPost"
+                android:src="@drawable/icon_post" />
+
+            <ImageView
+                android:id="@+id/L_profileImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="36dip"
+                android:contentDescription="@string/iconDescProfile"
+                android:src="@drawable/icon_profile" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/L_menuListViewSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            android:contentDescription="@string/iconDescMenuListViewSwitcher"
+            android:src="@drawable/icon_commonsection_hidden" />
+    </LinearLayout>
+
+</FrameLayout>

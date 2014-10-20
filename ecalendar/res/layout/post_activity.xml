@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_monthview_sample"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    tools:context="com.interest.ecalendar.activity.PostActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <!-- height: 30dip -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- width:30dip -->
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|bottom"
+            android:src="@drawable/cancel_icon" />
+
+        <!-- width:250dip -->
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:background="#90FFFFFF"
+            android:gravity="center"
+            android:text="2014-07-29"
+            android:textColor="#194b15" />
+
+        <!-- width:30dip -->
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            android:src="@drawable/save_icon" />
+    </LinearLayout>
+
+    <!-- height: 40dip -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#70FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/textView1"
+            android:layout_width="230dip"
+            android:layout_height="40dip"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="8dip"
+            android:paddingRight="10dip"
+            android:layout_marginRight="10dip"
+            android:text="This is summary"
+            android:textColor="#194b15"
+            android:textSize="@dimen/label_font_size" />
+
+        <ImageView
+            android:id="@+id/post_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:src="@drawable/icon_pic" />
+    </LinearLayout>
+
+    <!-- height: 150dip -->
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:background="#70FFFFFF"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:paddingLeft="8dip"
+        android:paddingTop="12dip"
+        android:scrollHorizontally="true"
+        android:text="Apache Cordova is a set of device APIs that allow a mobile app developer to access native device function such as the camera or accelerometer from JavaScript."
+        android:textColor="#194b15"
+        android:textSize="@dimen/label_font_size" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- height: 40dip -->
+
+    <TextView
+        android:id="@+id/edit_region"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginTop="5dip"
+        android:background="#70FFFFFF"
+        android:drawableLeft="@drawable/icon_region"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:text="   HK   China  India and more"
+        android:textColor="#194b15" />
+
+    <!-- height: 100dip -->
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="95dip"
+        android:layout_marginTop="5dip"
+        android:background="#70111111"
+        android:calendarViewShown="false"
+        android:endYear="2090"
+        android:spinnersShown="true"
+        android:startYear="2000"
+        android:visibility="invisible" />
+
+    <!-- height: 40dip -->
+    <!-- Fragment, Menu Bar -->
+
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="com.interest.ecalendar.fragment.MenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:gravity="bottom|center_horizontal" />
+
+</LinearLayout>

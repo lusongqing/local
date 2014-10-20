@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_monthview_sample"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    tools:context="com.interest.ecalendar.activity.ProfileActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <!-- height: 90dip -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="30dip"
+        android:gravity="left|center_vertical"
+        android:background="#70FFFFFF"
+        android:drawableLeft="@drawable/icon_region"
+        android:paddingLeft="8dip"
+        android:text="  Region Setting"
+        android:textColor="#194b15"
+        android:textSize="@dimen/label_font_size" />
+
+    <!-- height: 210dip -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:background="#70FFFFFF"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#90FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="HongKong"
+                android:textColor="#194b15" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#90FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="China"
+                android:textColor="#194b15" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#70000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="India"
+                android:textColor="#111111" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip" 
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#90FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Germany"
+                android:textColor="#194b15" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#70000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="France"
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#70000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Spain"
+                android:textColor="#111111" />
+
+        </TableRow>
+    </TableLayout>
+    
+    <!-- height: 160dip -->
+	<!-- Fragment, Menu Bar -->
+	
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="com.interest.ecalendar.fragment.MenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:gravity="bottom|center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcompage_sample"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context="com.interest.ecalendar.activity.LoginActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dip"
+        android:layout_weight="1.0"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/login_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/welcome_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_page_app_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@drawable/bg_app_name"
+                android:textSize="@dimen/app_name_font_size" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="108dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dip"
+            android:background="#60FFFFFF"
+            android:ems="8"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:paddingBottom="0dip"
+            android:paddingLeft="8dip"
+            android:fontFamily="Gill Sans"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dip"
+            android:background="#60FFFFFF"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingBottom="0dip"
+            android:paddingLeft="8dip"
+            android:fontFamily="Gill Sans"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/goBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="70dip"
+            android:layout_height="match_parent"
+            android:background="#959FB62A"
+            android:paddingBottom="0dip"
+            android:paddingRight="0dip"
+            android:text="@string/goBtn"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/label_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

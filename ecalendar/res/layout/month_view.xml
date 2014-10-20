@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_monthview_sample"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    tools:context="com.interest.ecalendar.activity.MonthViewActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <!-- height: 165dip -->
+
+    <CalendarView
+        android:id="@+id/vcalendar"
+        android:layout_width="match_parent"
+        android:layout_height="165dip"
+        android:layout_gravity="top|center_horizontal"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        android:firstDayOfWeek="2"
+        android:layoutMode="clipBounds"
+        android:longClickable="true"
+        android:minDate="03/03/1865"
+        android:showWeekNumber="true"
+        android:shownWeekCount="4" />
+
+    <!-- height:15dip -->
+
+    <ImageView
+        android:id="@+id/upIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="13dip"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginBottom="2dip"
+        android:src="@drawable/upicon" />
+
+    <!-- height:140dip -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center" >
+
+        <!-- First Row - 1nd Activity -->
+
+        <TableRow
+            android:id="@+id/activity1Row"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:orientation="horizontal" >
+
+            <!-- Left side: show person who post the activity -->
+
+            <TextView
+                android:id="@+id/activity1PosterView"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/photo1"
+                android:text="@string/person1" />
+
+            <!-- Right side: show the activity -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_monthview_activitysection_white_1"
+                android:orientation="vertical"
+                android:padding="3dip" >
+
+                <!-- activity title -->
+
+                <TextView
+                    android:id="@+id/activity1View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:gravity="left|top"
+                    android:paddingLeft="15dip"
+                    android:text="@string/activity1"
+                    android:textColor="#194b15" />
+
+                <!-- activity attachment icon, comment icon, post datetime -->
+
+                <LinearLayout
+                    android:id="@+id/activity1InfoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip" >
+
+                    <ImageView
+                        android:id="@+id/activity1AttLinkImgView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/iconDescAttachmentLink"
+                        android:src="@drawable/icon_pic" />
+
+                    <TextView
+                        android:id="@+id/activity1ComLinkImgView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/icon_comment"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="3"
+                        android:textColor="#194b15" />
+
+                    <TextView
+                        android:id="@+id/activity1DateView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/time1"
+                        android:textColor="#194b15" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <!-- Third Row - 2nd Activity -->
+
+
+        <!-- Second Row - 1nd Activity -->
+
+        <TableRow
+            android:id="@+id/activity2Row"
+            android:layout_width="match_parent"
+            android:layout_height="75dip"
+            android:orientation="horizontal" >
+
+            <!-- Left side: show person who post the activity -->
+
+            <TextView
+                android:id="@+id/activity2PosterView"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/photo2"
+                android:text="@string/person2" />
+
+            <!-- Right side: show the activity -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_monthview_activitysection_white_2"
+                android:orientation="vertical"
+                android:padding="3dip" >
+
+                <!-- activity title -->
+
+                <TextView
+                    android:id="@+id/activity2View"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dip"
+                    android:gravity="left|top"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="5dip"
+                    android:text="@string/activity2"
+                    android:textColor="#194b15" />
+
+                <!-- activity attachment icon, comment icon, post datetime -->
+
+                <LinearLayout
+                    android:id="@+id/activity2InfoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/activity2ComLinkImgView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/icon_comment"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="3"
+                        android:textColor="#194b15" />
+
+                    <TextView
+                        android:id="@+id/activity2DateView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/time1"
+                        android:textColor="#194b15" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    
+    <!-- height:80dip -->
+    <!-- Fragment, Menu Bar -->
+
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="com.interest.ecalendar.fragment.MenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:gravity="bottom|center_horizontal" />
+    
+</LinearLayout>

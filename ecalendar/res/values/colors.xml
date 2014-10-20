@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+  <color name="bg_80FFFFFF">#80FFFFFF</color>
+  <color name="bg_30FFFFFF">#90ddd9cc</color>
+  <color name="bg_transparent_button">#50b0be2a</color>
+</resources>  

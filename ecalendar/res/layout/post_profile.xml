@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="300dp"
+    android:layout_height="420dp"
+    android:background="@drawable/bg_monthview_sample"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    tools:context="com.interest.ecalendar.activity.PostProfileActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <!-- height: 90dip -->
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#70FFFFFF"
+        android:drawableLeft="@drawable/icon_region"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dip"
+        android:text="  Region Setting"
+        android:textColor="#194b15"
+        android:textSize="@dimen/label_font_size" />
+
+    <!-- height: 210dip -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:layout_marginBottom="70dip"
+        android:background="#70FFFFFF"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#90FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="HongKong"
+                android:textColor="#194b15" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#90FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="China"
+                android:textColor="#194b15" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#70000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="India"
+                android:textColor="#111111" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#90FFFFFF"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Germany"
+                android:textColor="#194b15" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#70000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="France"
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dip"
+                android:layout_margin="5dip"
+                android:background="#70000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Spain"
+                android:textColor="#111111" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
